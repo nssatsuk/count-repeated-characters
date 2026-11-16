@@ -10,7 +10,7 @@ public class RepeatedCharacters {
         char symbol2 = ',';
         int count2 = 0;
 
-        char symbol3 = 'Q';
+        char symbol3 = 'L';
         int count3 = 0;
 
         for (int i = 0; i < text.length(); i++) {
@@ -18,10 +18,13 @@ public class RepeatedCharacters {
                 count1++;
             } else if (text.charAt(i) == symbol2) {
                 count2++;
+            } else if (text.charAt(i) == symbol3) {
+                count3++;
             }
         }
         System.out.println("Кол-во символа o = " + count1);
         System.out.println("Кол-во запятых = " + count2);
+        System.out.println("Кол-во символа L = " + count3);
 
     }
 }
